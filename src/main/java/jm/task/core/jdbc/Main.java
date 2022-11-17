@@ -17,9 +17,9 @@ public class Main {
         userDao.saveUser("Tre", "Cool", (byte) 49);
         userDao.saveUser("Jason", "White", (byte) 49);
 
-        userDao.removeUserById(1);
-        userDao.getAllUsers();
-        userDao.cleanUsersTable();
-        userDao.dropUsersTable();
+//        userDao.removeUserById(1);
+//        userDao.getAllUsers();
+//        userDao.cleanUsersTable();
+//        userDao.dropUsersTable();
     }
 }
