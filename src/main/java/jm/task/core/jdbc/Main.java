@@ -7,7 +7,6 @@ import jm.task.core.jdbc.util.Util;
 public class Main {
     public static void main(String[] args) {
 
-        Util.getConnection();
         UserDao userDao = new UserDaoJDBCImpl();
 
         userDao.createUsersTable();
@@ -17,9 +16,9 @@ public class Main {
         userDao.saveUser("Tre", "Cool", (byte) 49);
         userDao.saveUser("Jason", "White", (byte) 49);
 
-//        userDao.removeUserById(1);
-//        userDao.getAllUsers();
-//        userDao.cleanUsersTable();
-//        userDao.dropUsersTable();
+        userDao.removeUserById(1);
+        userDao.getAllUsers();
+        userDao.cleanUsersTable();
+        userDao.dropUsersTable();
     }
 }
